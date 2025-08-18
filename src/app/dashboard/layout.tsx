@@ -8,8 +8,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex  ">
-      <div className=" side_bar flex-[1] pt-[30px] ">
+    <div className="flex ">
+      <div className=" side_bar  flex-[0.8] pt-[30px] h-[100vh] sticky top-0">
         <Sidebar />
       </div>
       <div className="flex-[3] ">

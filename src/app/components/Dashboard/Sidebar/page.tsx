@@ -74,14 +74,7 @@ const menuItems = [
 const Sidebar = () => {
   return (
     <div>
-      <div className="flex items-center gap-2 mb-5 ml-[0.75rem]">
-        {/* <img
-          src="/_a_futuristic_humanoid_character__by_chrisjr2518_djdahjo-pre.jpg"
-          alt="user"
-          height={50}
-          width={50}
-          className="rounded-full"
-        /> */}
+      <div className="flex   items-center gap-2 mb-5 ml-[0.75rem]">
         <img
           className="rounded-full"
           width="50"

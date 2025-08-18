@@ -1,0 +1,9 @@
+.card {
+  background-color: var(--bgSoft);
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+  background-color: var(--bgSoftHover);
+  cursor: pointer;
+}

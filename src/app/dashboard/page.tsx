@@ -14,14 +14,15 @@ const DashboardPage = () => {
           <Card />
         </div>
 
-        <div className="grid grid-rows-2 gap-4 ">
+        <div className="grid gap-[20px]">
           <Transaction />
           <Chart />
         </div>
       </div>
-
-      <div>
-        <Rightbar />
+      <div className="col-span-1 self-start h-full">
+        <div className="sticky top-[116px]">
+          <Rightbar />
+        </div>
       </div>
     </div>
   );

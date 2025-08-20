@@ -11,10 +11,10 @@ export default function RootLayout({
   return (
     <>
       <div className="flex ">
-        <div className=" side_bar  flex-[0.8] pt-[30px] h-[100vh] sticky top-0">
+        <div className=" side_bar  flex pt-[30px] h-[100vh] sticky top-0">
           <Sidebar />
         </div>
-        <div className="flex-[3] ">
+        <div className="flex flex-col w-full ">
           <div>
             <Navbar />
           </div>

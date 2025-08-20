@@ -1,20 +1,17 @@
 import React from "react";
 import { MdManageSearch } from "react-icons/md";
 import "./user.css";
-
+import SearchPage from "../search/page";
+import Pagination from "../pagination/pagination";
 import Link from "next/link";
 const UserPage = () => {
   return (
     <div>
-      <div className=" p-[20px] bg-[var(--bgSoft)] m-[20px] rounded-[10px]">
+      <div className=" p-[20px] bg-[var(--bgSoft)] ml-[20px] mr-[20px] rounded-[10px]">
         <div className="flex justify-between items-center mb-4">
           <div className="flex p-[8px] gap-2.5 bg-[#2e374a] rounded-[10px]">
             <MdManageSearch size={20} />
-            <input
-              type="text"
-              className="bg-transparent outline-none"
-              placeholder="Search for a user"
-            />
+            <SearchPage placeholder="Search for a user..." />
           </div>
           <Link
             href="/dashboard/user/add"
@@ -97,18 +94,7 @@ const UserPage = () => {
             </tbody>
           </table>
         </div>
-        <div className="flex justify-between items-center mt-4">
-          <Link href="/">
-            <button className="bg-[gray] text-white py-1 px-3 rounded-md">
-              Previous
-            </button>
-          </Link>
-          <Link href="/">
-            <button className="bg-[white] text-black py-1 px-3 rounded-md">
-              Next
-            </button>
-          </Link>
-        </div>
+        <Pagination />
       </div>
     </div>
   );

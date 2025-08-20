@@ -3,7 +3,7 @@ import "./rightbar.css";
 import { MdDisplaySettings, MdOutlineCastForEducation } from "react-icons/md";
 const Rightbar = () => {
   return (
-    <div className="container    sticky top-0">
+    <div className="container    sticky top-0 w-[100%]">
       <div className="item">
         <div className="bgContainer">
           <img src="/astronaut.png" alt="User Avatar" className="bg" />

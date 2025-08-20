@@ -1,19 +1,19 @@
-"use client";
 import React from "react";
 import "./navbar.css";
+
 import {
   MdNotificationsNone,
   MdOutlineChat,
   MdManageSearch,
   MdPublic,
 } from "react-icons/md";
-import { usePathname } from "next/navigation";
+
+import NavTitle from "./navtitle/page";
 const Navbar = () => {
-  const pathname = usePathname();
   return (
     <div className="navbar  ">
       {/* Take only the last word of the path name */}
-      <div className="capitalize">{pathname.split("/").pop()}</div>
+      <NavTitle />
       <div className="icons">
         <div className="flex p-[10px] gap-2.5 bg-[#2e374a] rounded-[10px]">
           <MdManageSearch size={20} />
